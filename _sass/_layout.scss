@@ -2,98 +2,114 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background: #2c3e50;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
-
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
+    header {
+        width: 800px;
+        text-align: justify;
+        height: 120px;
+        padding: 30px 5%;
+        margin: 0 auto;
+        color: #fff;
+        transition: all 0.5s ease 0s;
     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+    header.small {
+        height: 60px;
+        padding: 10px 5%;
     }
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
+    header::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+
+    header > div,
+    header > div::before,
+    header nav,
+    header > div h1 {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    header > div {
+        height: 100%;
+    }
+
+    header > div::before {
+        content: '';
+        height: 100%;
+    }
+
+    header > div h1 {
+        font-size: 3em;
+        font-weight: bold;
+        transition: all 0.5s ease 0s;
+    }
+
+    header.small > div h1 {
+        font-size: 2em;
+    }
+
+    header nav a {
+        padding: 0 0.6em;
+        white-space: nowrap;
         border-radius: 5px;
-        text-align: right;
+        color: white;
+        text-decoration: none;
+    }
 
-        .menu-icon {
+    header nav a:hover {
+        text-decoration: underline;
+    }
+
+    header nav a.current {
+        background-color: white;
+        color: #2c3e50;
+    }
+
+//    header nav a:last-child {
+//        padding-right: 0;
+//    }
+
+    @media screen and (max-width: 720px){
+        
+        header {
+            height: auto;
+        }
+        
+        header > div,
+        header > div h1,
+        header nav {
+            height: auto;
+            width: auto;
             display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
             text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
         }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
+        
     }
 }
-
 
 
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+//    border-top: 1px solid $grey-color-light;
+    background-color: $grey-color-light;
     padding: $spacing-unit 0;
+    text-align: center;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    margin: auto;
 }
 
 .footer-heading {
@@ -162,7 +178,9 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 200px;
 }
 
 .page-heading {
@@ -199,7 +217,8 @@
 
 .post-title {
     font-size: 42px;
-    color: red;
+//    color: red;
+    font-weight: bold;
     letter-spacing: -1px;
     line-height: 1;
 
@@ -235,3 +254,4 @@
         }
     }
 }
+

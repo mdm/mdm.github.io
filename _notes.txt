@@ -1,0 +1,21 @@
+* viewport meta-tag
+* wai-aria roles
+* reset stylesheet: http://meyerweb.com/eric/tools/css/reset/ or http://necolas.github.com/normalize.css/
+* rem units
+* print stylesheet
+* only block elements can have a width and height
+* box-sizing
+* https://www.mathjax.org/
+* http://bradfrostweb.com/blog/mobile/fixed-position/
+* alt-text and image description in content
+* don't use title on images (markdown?)
+* google analytics screen size
+* padding for links increases touch target size
+* https://addons.mozilla.org/en-us/firefox/addon/fangs-screen-reader-emulator/
+* http://alistapart.com/article/on-web-typography
+* http://webtypography.net/toc/
+* line-height: 1.4
+* http://bradfrost.github.io/this-is-responsive/patterns.html
+* 
+
+

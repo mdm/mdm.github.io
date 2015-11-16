@@ -10,7 +10,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
+{% highlight ruby linenos=table %}
 class SimpleGraph
     Vertex = Struct.new(:edges)
     Edge = Struct.new(:vertex1, :vertex2)
@@ -18,6 +18,7 @@ class SimpleGraph
     def initialize(num_vertices)
         @edges = []
         @vertices = []
+        @test = "some\tstring#{interpolation_test}\r\n"
         num_vertices.times { @vertices << Vertex.new([]) }
     end
         
