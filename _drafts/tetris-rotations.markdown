@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tetris Rotations
+math: true
 ---
 Implementing a Tetris clone is a popular first project for aspiring game developers. The rules are simple enough, but implementing the rotations requires some thought. The obvious approach, most programmers would think of first, is to represent the pieces as two-dimensional arrays. You could then do the rotations manually and save the results in a lookup-table or rotate the pieces using some form of rotation algorithm.
 

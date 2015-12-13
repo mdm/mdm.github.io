@@ -1,6 +1,5 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -8,7 +7,7 @@
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <script type="text/javascript" src="/js/MathJax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {%if page.math %}<script type="text/javascript" src="/js/MathJax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
   <script src="/js/jquery-2.1.4.min.js"></script>
   <script>
     $(window).scroll(function() {
