@@ -1,7 +1,7 @@
 <div class="site-header">
-<header>
+<header role="banner">
 <div><h1>Marc Dominik Migge</h1></div>
-<nav>
+<nav role="navigation">
     {% assign nav = page.url | split:'/' %}
     {% if nav[1] == 'about' %}
     <a href="{{ site.baseurl }}/">Blog</a>
