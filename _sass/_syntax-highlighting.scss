@@ -3,7 +3,7 @@
  */
 .highlight {
     background: #f8f8f8;
-    @extend %vertical-rhythm;
+    //@extend %vertical-rhythm;
 
     .c     { color: #408080; font-style: italic } // Comment
     .err   { border: 1px solid #ff0000 } // Error
