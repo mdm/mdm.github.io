@@ -3,19 +3,21 @@
 <div><h1>Marc Dominik Migge</h1></div>
 <nav role="navigation">
     {% assign nav = page.url | split:'/' %}
+    <ul>
     {% if nav[1] == 'about' %}
-    <a href="{{ site.baseurl }}/">Blog</a>
-    <a href="/projects/">Projects</a>
-    <a class="current" href="/about/">About</a>
+    <li><a href="{{ site.baseurl }}/">Blog</a></li>
+    <li><a href="/projects/">Projects</a></li>
+    <li><a class="current" href="/about/">About</a></li>
     {% elsif nav[1] == 'projects' %}
-    <a href="{{ site.baseurl }}/">Blog</a>
-    <a class="current" href="/projects/">Projects</a>
-    <a href="/about/">About</a>
+    <li><a href="{{ site.baseurl }}/">Blog</a></li>
+    <li><a class="current" href="/projects/">Projects</a></li>
+    <li><a href="/about/">About</a></li>
     {% else %}
-    <a class="current" href="{{ site.baseurl }}/">Blog</a>
-    <a href="/projects/">Projects</a>
-    <a href="/about/">About</a>
+    <li><a class="current" href="{{ site.baseurl }}/">Blog</a></li>
+    <li><a href="/projects/">Projects</a></li>
+    <li><a href="/about/">About</a></li>
     {% endif %}
+    </ul>
 </nav>
 </header>
 </div>
