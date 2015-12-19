@@ -1,0 +1,47 @@
+.site-header {
+    background-color: $header-bg-color;
+    color: $header-fg-color;
+    text-align: center;
+    font-family: $header-font-family;
+    padding: 1em 0;
+    
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1.2;
+        padding-bottom: 1em;
+    }
+    
+    li {
+        display: inline;
+    }
+    
+    a {
+        background-color: $header-fg-color;
+        color: $header-bg-color;
+        padding: 0.2em 1em;
+        border-radius: 0.2em;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    @media (min-width: 1000px) {
+        h1, nav {
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+            line-height: 3;
+            padding-right: 1.5em;
+            padding-bottom: 0;
+        }
+        
+    }
+}

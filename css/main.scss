@@ -4,11 +4,13 @@
 @charset "utf-8";
 
 // Define variables here
-
+$header-bg-color: blue;
+$header-fg-color: white;
+$header-font-family: Lato, sans serif;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "https://fonts.googleapis.com/css?family=Open+Sans:400,800",
+        "https://fonts.googleapis.com/css?family=Lato:400,800",
         "reset",
         "base",
         "layout",
