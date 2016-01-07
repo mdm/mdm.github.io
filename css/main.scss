@@ -8,6 +8,11 @@ $header-bg-color: blue;
 $header-fg-color: white;
 $header-font-family: Lato, sans serif;
 
+$bg-color: white;
+$fg-color: black;
+$shaded-bg-color: lightgray;
+$shaded-fg-color: darkgray;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "https://fonts.googleapis.com/css?family=Lato:400,800",
