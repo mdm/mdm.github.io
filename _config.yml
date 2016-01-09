@@ -13,17 +13,17 @@ defaults:
       path: ""
     values:
       math: false
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: /:year/:month/:day/:title/
-  -
-    scope:
-      path: "projects"
-      type: "posts"
-    values:
-      permalink: /projects/:title/
+#  -
+#    scope:
+#      path: ""
+#      type: "posts"
+#    values:
+#      permalink: "/:year/:month/:day/:title/"
+#  -
+#    scope:
+#      path: "projects"
+#      type: "posts"
+#    values:
+#      permalink: /projects/:title/
 # Build settings
 markdown: kramdown
