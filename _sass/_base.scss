@@ -20,4 +20,10 @@
         border-left: 0.25em solid $shaded-fg-color;
         background: $shaded-bg-color;
     }
+    
+    pre {
+        font-family: 'Ubuntu Mono', monospace;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+    }
 }

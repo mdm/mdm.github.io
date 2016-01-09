@@ -10,7 +10,7 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby linenos=table %}
+{% highlight ruby %}
 class SimpleGraph
     Vertex = Struct.new(:edges)
     Edge = Struct.new(:vertex1, :vertex2)
