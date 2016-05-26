@@ -17,12 +17,18 @@
     }
     
     a {
-        background-color: $header-fg-color;
-        color: $header-bg-color;
+        color: $header-fg-color;
         padding: 0.2em 1em;
-        border-radius: 0.2em;
         text-decoration: none;
     }
+
+    a.current {
+        @extend a;
+        background-color: $header-fg-color;
+        color: $header-bg-color;
+        border-radius: 0.2em;
+    }
+
     
     a:hover {
         text-decoration: underline;
