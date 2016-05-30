@@ -22,8 +22,8 @@
     }
     
     pre {
+        padding: 1em;
         font-family: 'Ubuntu Mono', monospace;
-        white-space: pre-wrap;
-        white-space: -moz-pre-wrap;
+        overflow: auto;
     }
 }
