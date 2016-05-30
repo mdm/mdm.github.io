@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title:  "Project Test"
 date:   2015-09-08 23:45:41
 ---
