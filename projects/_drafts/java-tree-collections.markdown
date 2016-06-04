@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Java Tree Collections"
 date:   2015-09-08 23:45:41
 categories: jekyll update
