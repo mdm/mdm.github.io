@@ -18,12 +18,14 @@ defaults:
       path: ""
       type: "posts"
     values:
+      layout: post
       permalink: "/:year/:month/:day/:title/"
   -
     scope:
       path: "projects"
       type: "posts"
     values:
-      permalink: /projects/:title/
+      layout: poject
+      permalink: "/projects/:title/"
 # Build settings
 markdown: kramdown
