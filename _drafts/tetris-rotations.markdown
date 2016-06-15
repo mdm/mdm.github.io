@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tetris Rotations
 math: true
 ---
