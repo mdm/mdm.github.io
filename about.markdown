@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi, my name is Marc Dominik Migge. I'm a software developer from Bonn, Germany and this is my blog/portfolio. In my free time I enjoy playing Go and learning foreign languages - especially Japanese.
+Hi, my name is Marc Dominik Migge. I'm a software developer from Cologne, Germany and this is my blog/portfolio. In my free time I enjoy playing Go and learning foreign languages - especially Japanese.
 
 ![Me playing Go](/images/me_playing_go.jpg)
 
