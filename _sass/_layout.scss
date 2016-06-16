@@ -33,7 +33,23 @@
     a:hover {
         text-decoration: underline;
     }
-    
+
+    @media (min-width: 450px) {
+        h1 {
+            font-size: 3em;
+            line-height: 1.5;
+            padding-bottom: 0.5em;
+        }
+    }
+        
+    @media (min-width: 600px) {
+        h1 {
+            font-size: 3.5em;
+            line-height: 1.5;
+            padding-bottom: 0.5em;
+        }
+    }
+        
     @media (min-width: 1000px) {
         h1, nav {
             height: 100%;
@@ -54,9 +70,9 @@
 .page-content {
     margin: 1em;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 850px) {
         background-color: red;
-        width: 50em;
+        width: 32em;
         margin: 0 auto;
     }
 }

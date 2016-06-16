@@ -1,6 +1,14 @@
 .page-content {
     font-family: $base-font-family;
-    font-size: 1.2em;
+    font-size: 0.9em;
+
+    @media (min-width: 450px) {
+        font-size: 1.1em;
+    }
+
+    @media (min-width: 600px) {
+        font-size: 1.6em;
+    }
 
     p {
         line-height: 1.5;
@@ -9,11 +17,13 @@
 
     h1 {
         font-size: 2em;
+        font-weight: bold;
         padding: 1em 0;
     }
 
     h2 {
         font-size: 1.5em;
+        font-weight: bold;
         padding: 1em 0;
     }
 
