@@ -21,7 +21,6 @@ A General Rotation Algorithm
 The first rotation system I will discuss is called "[Super Rotation System][1]" (SRS). This is the system currently endorsed by The Tetris Company. It does not rely on any orientation dependant shifting, which makes it a good starting point for us. The initial orientations of the pieces are shown in figure 2. Note, that all pieces start with their flat sides facing down.
 
 From linear algebra we know that the general form of a matrix for clockwise rotation around the origin, in two dimensions, by an angle \\(\theta\\) is:
-
 \\[
 R =
 \begin{pmatrix}
@@ -29,9 +28,7 @@ R =
 -\sin \theta & \cos \theta
 \end{pmatrix}
 \\]
-
 Because in our case we can calculate all rotations by repeatedly rotating by 90&deg;, this simplifies to:
-
 \\[
 R =
 \begin{pmatrix}
@@ -39,9 +36,7 @@ R =
 -1 & 0
 \end{pmatrix}
 \\]
-
 However, this matrix assumes cartesian coordinates. To use screen coordinates, we have to account for the flip of the y-axis. The rotation matrix then becomes:
-
 \\[
 R =
 \begin{pmatrix}
@@ -49,12 +44,9 @@ R =
 1 & 0
 \end{pmatrix}
 \\]
-
 To rotate a coordinate we would multiply it with this matrix, but we can translate the multiplication into simple assignments:
-
     x_new = -y_old
     y_new = x_old
-
 Next, to rotate around a pivot-point, instead of the origin, we have to do some shifting. *Before* rotating, we have to shift the coordinates so that the pivot-point becomes the origin (this shift is called `sb` below) and shift them back *after* rotating (called `sa` below):
 
     x_new = sa_x + (y_old - sb_x)
