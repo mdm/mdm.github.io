@@ -69,9 +69,13 @@
 
 .page-content {
     margin: 1em;
+    
+    .post-meta {
+        color: grey;
+        padding: 0;
+    }
 
     @media (min-width: 850px) {
-        background-color: red;
         width: 32em;
         margin: 0 auto;
     }
