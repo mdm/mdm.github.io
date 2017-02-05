@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Latest Projects</h1>
+  <h1 class="page-heading">Selected Projects</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -22,8 +22,5 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p>Find more projects on <a href="https://github.com/{{ site.github_username }}">my Github account</a>.</p>
-  
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <p>Find more of my projects on <a href="https://github.com/{{ site.github_username }}/">GitHub</a>.</p>
 </div>
