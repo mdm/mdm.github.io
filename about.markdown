@@ -15,7 +15,7 @@ This website is mainly about programming, but if you want to know a little bit m
 Go
 --
 
-I started playing [Go](https://en.wikipedia.org/wiki/Go_%28game%29) in October 2004, after picking up a set of stones and a board during a trip to China. I began playing in tournaments soon after and [rose to 4k](http://www.europeangodatabase.eu/EGD/Player_Card.php?&key=13837912) in about two years. Unfortunately, I didn't improve much after that. Mostly due to my inconsistent reading abilities and lack of joseki knowledge. However, I'm still chasing the dream of becoming a dan player one day. Online I usually play on [KGS](http://www.gokgs.com/) as "[mdm](http://kgs.gosquares.net/index.rhtml.en?id=mdm&r=1)". I like the agressive playing style of the Asian servers ([Tygem](http://www.tygemgo.com/), [WBaduk](http://www.wbaduk.com/), etc.) better, but their clients are too buggy.
+I started playing [Go](https://en.wikipedia.org/wiki/Go_%28game%29) in October 2004, after picking up a set of stones and a board during a trip to China. I began playing in tournaments soon after and [rose to 4k](http://www.europeangodatabase.eu/EGD/Player_Card.php?&key=13837912) in about two years. Unfortunately, I didn't improve much after that. Mostly due to my inconsistent reading abilities and lack of joseki knowledge. However, I'm still chasing the dream of becoming a dan player one day. Online, I used to play a lot on [KGS](http://www.gokgs.com/) as "[mdm](http://kgs.gosquares.net/index.rhtml.en?id=mdm&r=1)". However, lately I like the agressive playing style of the Asian servers ([Tygem](http://www.tygemgo.com/), [Fox](http://weiqi.qq.com/), etc.) better and usually play there on weekends.
 
 Foreign Languages
 -----------------
