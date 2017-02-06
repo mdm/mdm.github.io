@@ -86,7 +86,7 @@ The [DTET rotation system][2] even provides four rotation states instead of two.
 Where To Go From Here
 ---------------------
 
-As you see implementing basic Tetris rotations is not that hard. However, if you want an implementation that works well even for very skilled players you can find many interesting articles on [this wiki][4] wiki. I hope you have fun implemeting your own Tetris clone.
+As you see implementing basic Tetris rotations is not that hard. However, if you want an implementation that works well even for very skilled players you can find many interesting articles on [this wiki][4]. I hope you have fun implemeting your own Tetris clone.
 
   [1]: http://tetris.wikia.com/wiki/SRS
   [2]: http://tetris.wikia.com/wiki/DTET_Rotation_System
