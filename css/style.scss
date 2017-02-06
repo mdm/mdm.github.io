@@ -49,3 +49,18 @@
 code, pre {
   font-family: "Ubuntu Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
+
+.post-list {
+  padding: 0;
+  list-style: none;
+  
+  li {
+    padding-bottom: 2rem;
+  }
+}
+
+.post-meta {
+  padding-top: 0;
+  font-size: 0.8rem;
+}
+
