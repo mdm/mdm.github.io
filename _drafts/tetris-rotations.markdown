@@ -78,7 +78,7 @@ Many other rotation systems for Tetris exist. For most of those rotation systems
 
 For example, if you compare the rotation of the T-block in [SRS][1] (marked *Nintendo* below) and ["Tetris The Grand Master"][5] you will see that TGM shifts the T-block after rotation to keep the current height of the falling block independant from the rotation.
 
-The [DTET rotation system][2] even provides four rotation states instead of two.
+The [DTET rotation system][2] even provides four rotation states instead of just two.
 
 ![Figure 3](/images/tetrot_comp.png 'Figure 3')
 
@@ -91,6 +91,6 @@ As you see implementing basic Tetris rotations is not that hard. However, if you
   [1]: http://tetris.wikia.com/wiki/SRS
   [2]: http://tetris.wikia.com/wiki/DTET_Rotation_System
   [3]: http://en.wikipedia.org/wiki/Cartesian_coordinate_system
-  [4]: http://tetris.wikia.com/wiki/
-  [5]: http://tetris.wikia.com/wiki/
+  [4]: http://tetris.wikia.com/wiki/Tetris_Wiki
+  [5]: http://tetris.wikia.com/wiki/Tetris_The_Grand_Master
   
