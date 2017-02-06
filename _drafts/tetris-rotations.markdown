@@ -12,7 +12,7 @@ Figure 1 above shows the seven Tetrominos. From now on I will refer to each piec
 
 ![Figure 2](/images/tetrot_srs.png 'Figure 2')
 
-Two things are worth mentioning about this representation. Firstly, I don't use a cartesian coordinate system, but the usual screen coordinates, starting with (0, 0) in the top left. This makes drawing the piece easy. Secondly, each piece is assumed to live in a square bounding-box, the center of the box being the center of rotation.
+Two things are worth mentioning about this representation. Firstly, I don't use a [cartesian coordinate system][3], but the usual screen coordinates, starting with (0, 0) in the top left. This makes drawing the piece easy. Secondly, each piece is assumed to live in a square bounding-box, the center of the box being the center of rotation.
 
 
 A General Rotation Algorithm
@@ -45,8 +45,10 @@ R =
 \end{pmatrix}
 \\]
 To rotate a coordinate we would multiply it with this matrix, but we can translate the multiplication into simple assignments:
+
     x_new = -y_old
     y_new = x_old
+
 Next, to rotate around a pivot-point, instead of the origin, we have to do some shifting. *Before* rotating, we have to shift the coordinates so that the pivot-point becomes the origin (this shift is called `sb` below) and shift them back *after* rotating (called `sa` below):
 
     x_new = sa_x + (y_old - sb_x)
@@ -61,7 +63,7 @@ Because we assumed the pieces live in a bounding-box, whose center is the center
     sa_y = 0
     sb_y = 0
 
-where `size` is the size of the bounding-box (i.e. 2, 3, or 4), works for all blocks. So to sum up, we get:
+where `size` is the size of the bounding-box (i.e. 2, 3, or 4), works for all blocks. So to summarize, we get:
 
     x_new = 1 - (y_old - (size - 2))
     y_new = x_old
@@ -72,9 +74,23 @@ Assignments for counter-clockwise rotation are similar, but if we cache the coor
 Fine-tuned Rotation Systems
 ---------------------------
 
-For other rotation systems other values of the shift variables might work, but you might have to shift the piece again, depending on the current orientation of the block (compare [SRS rotation][1] to [DTET rotation][2] of the I-block, to see what I mean).
+Many other rotation systems for Tetris exist. For most of those rotation systems other values of the shift variables will work, but you might have to shift the piece again, depending on the current orientation of the block.
+
+For example, if you compare the rotation of the T-block in [SRS][1] (marked *Nintendo* below) and ["Tetris The Grand Master"][5] you will see that TGM shifts the T-block after rotation to keep the current height of the falling block independant from the rotation.
+
+The [DTET rotation system][2] even provides four rotation states instead of two.
 
 ![Figure 3](/images/tetrot_comp.png 'Figure 3')
 
+
+Where To Go From Here
+---------------------
+
+As you see implementing basic Tetris rotations is not that hard. However, if you want an implementation that works well even for very skilled players you can find many interesting articles on [this wiki][4] wiki. I hope you have fun implemeting your own Tetris clone.
+
   [1]: http://tetris.wikia.com/wiki/SRS
   [2]: http://tetris.wikia.com/wiki/DTET_Rotation_System
+  [3]: http://en.wikipedia.org/wiki/Cartesian_coordinate_system
+  [4]: http://tetris.wikia.com/wiki/
+  [5]: http://tetris.wikia.com/wiki/
+  
