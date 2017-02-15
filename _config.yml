@@ -31,3 +31,4 @@ defaults:
       permalink: "/projects/:title/"
 # Build settings
 markdown: kramdown
+google-analytics: UA-68661393-1
