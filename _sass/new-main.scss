@@ -27,7 +27,7 @@ body {
     .wrapper {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-end;
     }
 
     header {
@@ -35,8 +35,7 @@ body {
 
         h1 {
             font-size: 2rem;
-            padding: 0;
-            margin: 0;
+            margin: 0.5em 0;
         }
     }
 
@@ -49,7 +48,7 @@ body {
 
         li a {
             display: block;
-            padding: 1em 1em 0.5em 1em;
+            padding: 0.5em 1em 0.5em 1em;
             color: $header-fg-color;
             font-weight: bold;
             text-decoration: none;
