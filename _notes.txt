@@ -16,6 +16,10 @@
 * http://webtypography.net/toc/
 * line-height: 1.4
 * http://bradfrost.github.io/this-is-responsive/patterns.html
-* 
 
+2019
+====
+* Overhaul layout
+* Add sharing options
+* Add commenting via Staticman
 

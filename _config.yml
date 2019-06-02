@@ -1,15 +1,14 @@
 # Site settings
-title: Derandomized Thoughts
-long_title: Derandomized Thoughts - Blog & Portfolio of Marc Dominik Migge
-email: marcmigge@gmx.net
+title: tech.migge.io
+long_title: Writing & Tech by Marc Dominik Migge
+email: marc@migge.io
 github_username: mdm
 twitter_username: mdmigge
 description: > # this means to ignore newlines until "baseurl:"
   Hello, my name is Marc Dominik Migge. I'm a software developer from Cologne, Germany.
-  This is my blog and portfolio. You can find mostly programming related
-  articles here.
+  This is where I write about tech and show off some projects.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://mdm.github.io" # the base hostname & protocol for your site
+url: "https://tech.migge.io" # the base hostname & protocol for your site
 defaults:
   -
     scope:
@@ -21,7 +20,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: post
+      layout: article
       permalink: "/:year/:month/:day/:title/"
   -
     scope:
