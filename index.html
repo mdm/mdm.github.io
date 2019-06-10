@@ -7,7 +7,7 @@ layout: default
   <h1 class="articles__section-heading">Browse By Tag</h1>
   <ul class="categories">
     {% for tag in site.tags %}
-      <li>{{ tag[0] }}</li>
+      <li><a href="{{ tag[0] | prepend: 'tagged/' }}">{{ tag[0] }}</a></li>
     {% endfor %}  
   </ul>
 
@@ -25,7 +25,7 @@ layout: default
         <p class="article__meta">{{ post.date | date: "%B %-d, %Y" }}</p>
         <ul class="categories">
           {% for tag in post.tags %}
-            <li>{{ tag }}</li>
+            <li><a href="{{ tag | prepend: 'tagged/' }}">{{ tag }}</a></li>
           {% endfor %}
         </ul>
         {{ post.excerpt }}
