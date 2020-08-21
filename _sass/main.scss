@@ -13,10 +13,13 @@ body {
     font-family: $body-font;
     background-color: $highlight-bg-color;
     color: $text-color;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
-    color: $accent;
     text-decoration: none;
 }
 
@@ -37,8 +40,6 @@ a:hover {
 
 .header {
     background-color: $bg-color;
-    color: $text-color;
-    border-bottom: solid 2px $accent;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,14 +59,59 @@ a:hover {
         }
 
         li a.current {
-            background-color: $accent;
             color: $bg-color;
             border-radius: 5px;
         }
     }
 }
 
+.body--articles {
+    a {
+        color: $accent-articles;
+    }
+
+    .header {
+        color: $accent-articles;
+        border-bottom: solid 2px $accent-articles;
+
+        nav ul li a.current {
+            background-color: $accent-articles;
+        }
+    }
+}
+
+.body--projects {
+    a {
+        color: $accent-projects;
+    }
+
+    .header {
+        color: $accent-projects;
+        border-bottom: solid 2px $accent-projects;
+
+        nav ul li a.current {
+            background-color: $accent-projects;
+        }
+    }
+}
+
+.body--resume {
+    a {
+        color: $accent-resume;
+    }
+
+    .header {
+        color: $accent-resume;
+        border-bottom: solid 2px $accent-resume;
+
+        nav ul li a.current {
+            background-color: $accent-resume;
+        }
+    }
+}
+
 .content {
+    flex: 1;
     padding: 1em;
     padding-top: 6em;
     background-color: $bg-color;
@@ -94,7 +140,7 @@ a:hover {
         }
     }
 
-    .articles__section-heading {
+    .section-heading {
         font-family: $body-font;
         font-size: 1.5rem;
     }
@@ -111,8 +157,45 @@ a:hover {
         font-size: 3rem;
     }
 
-    .article__meta {
+    .article__date {
         font-size: 0.8em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .projects__list {
+        padding: 0;
+        list-style: none;
+    }
+
+    .project__title {
+        margin-bottom: 0px;
+        font-family: $heading-font;
+        font-weight: $heading-font-weight;
+        font-size: 3rem;
+    }
+
+    .project__screenshot--thumbnail {
+        border: 2px solid $accent-projects;
+        padding: 0.2em;
+    }
+
+    @media (min-width: 35em) {
+        .project__description {
+            display: flex;
+
+            .project__screenshot--thumbnail {
+                flex: 1;
+                margin: 1em;
+                margin-left: 0;
+            }
+
+            .project__blurb {
+                flex: 2;
+            }
+        }
     }
 }
 

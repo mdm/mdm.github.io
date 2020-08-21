@@ -2,19 +2,26 @@
 layout: default
 ---
 
-<div class="home">
+<div class="projects">
 
-  <h1 class="page-heading">Selected Projects</h1>
+  <h1 class="section-heading">Selected Projects</h1>
 
-  <ul class="post-list">
+  <ul class="projects__list">
     {% for post in site.posts %}
     {% if post.categories contains "projects" %}
       <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <h2 class="project__title">
+          <a class="project__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        {{ post.excerpt }}
-        <a href="{{ post.url | prepend: site.baseurl }}">Show details...</a>
+        <div class="project__description">
+          {% if post.screenshot %}
+          <img class="project__screenshot--thumbnail" src="/assets/images/{{ post.screenshot }}" alt="{{ post.title }}"/>
+          {% endif %}
+          <div class="project__blurb">
+          {{ post.excerpt }}
+          <a href="{{ post.url | prepend: site.baseurl }}">Show details...</a>
+          </div>
+        </div>
       </li>
     {% endif %}
     {% endfor %}

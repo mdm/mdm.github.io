@@ -4,16 +4,7 @@ layout: default
 
 <div class="articles">
 
-  <h1 class="articles__section-heading">Browse By Tag</h1>
-  <ul class="categories">
-    {% for tag in site.tags %}
-      <li><a href="{{ tag[0] | prepend: 'tagged/' }}">{{ tag[0] }}</a></li>
-    {% endfor %}  
-  </ul>
-
-  <hr/>
-  
-  <h1 class="articles__section-heading">Or Read Latest Articles</h1>
+  <h1 class="section-heading">Read Latest Articles</h1>
 
   <ul class="articles__list">
     {% for post in site.posts %}
@@ -22,12 +13,7 @@ layout: default
         <h2 class="article__title">
           <a class="article__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <p class="article__meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-        <ul class="categories">
-          {% for tag in post.tags %}
-            <li><a href="{{ tag | prepend: 'tagged/' }}">{{ tag }}</a></li>
-          {% endfor %}
-        </ul>
+        <p class="article__date">{{ post.date | date: "%B %-d, %Y" }}</p>
         {{ post.excerpt }}
         <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
       </li>
